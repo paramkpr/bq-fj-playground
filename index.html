@@ -1,0 +1,319 @@
+<!DOCTYPE html><html><head>
+      <title>shyam-notes</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em!important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em!important;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em!important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px/2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      
+    </head>
+    <body for="html-export">
+      <div class="crossnote markdown-preview  ">
+      <p><img src="https://fischerjordan.com/wp-content/uploads/2019/03/FJ-logo-horizontal-blue-medium-b.jpg" alt=""></p>
+<h1 class="crossnote-header" id="fj-x-bq-tech-background--research">FJ x BQ: Tech Background &amp; Research</h1>
+
+<p><em>Param Kapur, 09/21/23</em></p>
+<hr>
+<h2 class="crossnote-header" id="introduction">Introduction</h2>
+
+<p>The endeavor to manage and derive insights from a vast volume of unstructured data, such as SEC filings, necessitates a technological framework that is adept at handling, searching, and synthesizing information efficiently. Central to this framework are text embeddings, which convert textual data into vector representations, facilitating semantic similarity-based search and retrieval operations. The Massive Text Embedding Benchmark (MTEB) provides a robust measure to evaluate and compare various text embedding models across diverse tasks, ensuring an informed selection of models. Vector databases serve as the repository and retrieval system for the vectorized data, enabling efficient similarity search operations. Additionally, employing a modular architecture for integrating embeddings, vector databases, and Language Models (LLMs) fosters a conducive environment for information lookup and synthesis, while also allowing for the systematic evaluation and optimization of different tool combinations. This introductory overview outlines the primary components and considerations essential for developing a proficient system capable of intelligent information management and synthesis.</p>
+<hr>
+<h2 class="crossnote-header" id="background">Background</h2>
+
+<p>We'll cover the following topics one-by-one: Embeddings, MTEB, Vector Databases, and Implementation</p>
+<hr>
+<h3 class="crossnote-header" id="1-embeddings">1. Embeddings</h3>
+
+<h4 class="crossnote-header" id="a-what-are-embeddings">a. What are embeddings?</h4>
+
+<p>Embeddings are a type of representation for text data where words or phrases are mapped to vectors of real numbers in a continuous vector space. The key idea behind embeddings is to have fixed-size vectors for each word, regardless of the vocabulary size, which can capture semantic relationships between words.</p>
+<h6 class="crossnote-header" id="illustration">Illustration:</h6>
+
+<blockquote>
+<p>There can be many different types of similarities between words, for example, word big is similar to bigger in the same sense that small is similar to smaller. Example of another type of relationship can be word pairs big - biggest and small - smallest. We further denote two pairs of words with the same relationship as a question, as we can ask: "What is the word that is similar to small in the same sense as biggest is similar to big?"</p>
+<p>Somewhat surprisingly, these questions can be answered by performing simple algebraic operations with the vector representation of words. To find a word that is similar to small in the same sense as biggest is similar to big, we can simply compute vector <code>X = vector(”biggest”) − vector(”big”) + vector(”small”)</code>. Then, we search in the vector space for the word closest to X measured by cosine distance, and use it as the answer to the question (we discard the input question words during this search).</p>
+<p>Finally, we found that when we train high dimensional word vectors on a large amount of data, the resulting vectors can be used to answer very subtle semantic relationships between words, such as a city and the country it belongs to, e.g. France is to Paris as Germany is to Berlin.</p>
+</blockquote>
+<p><em>[Efficient Estimation of Word Representations in Vector Space, Tomas Mikolov and Kai Chen and Greg Corrado and Jeffrey Dean, <a href="https://arxiv.org/abs/1301.3781">https://arxiv.org/abs/1301.3781</a>]</em></p>
+<h4 class="crossnote-header" id="b-how-do-embeddings-work">b. How do embeddings work?</h4>
+
+<p>Embeddings are trained using neural networks on large text corpora. Here are the steps involved in training a simple word embedding model using a method like Word2Vec:</p>
+<ol>
+<li><strong>Vocabulary Creation</strong>: Create a vocabulary from the training corpus, assigning a unique identifier to each word.</li>
+<li><strong>Context and Target Words</strong>: For each word in the corpus, define a context window. The words within this window are the context words, and the word itself is the target word. (This is labeling the data.)</li>
+<li><strong>Neural Network Training</strong>:
+<ul>
+<li>Input Layer: The input layer contains the one-hot encoded vector of the target word.</li>
+<li>Hidden Layer: The hidden layer contains the word embedding vectors. The dimensionality of this layer (number of neurons) defines the size of the word vectors.</li>
+<li>Output Layer: The output layer predicts the context words using a softmax function.</li>
+</ul>
+</li>
+</ol>
+<p>The objective is to minimize the difference between the predicted probabilities and the actual distribution of the context words. The loss function commonly used is the negative log likelihood loss.</p>
+<p>Mathematically, the objective function <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>J</mi></mrow><annotation encoding="application/x-tex">J</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.09618em;">J</span></span></span></span> is given by:</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>J</mi><mo>=</mo><mo>−</mo><mfrac><mn>1</mn><mi>T</mi></mfrac><munderover><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow><mi>T</mi></munderover><munder><mo>∑</mo><mrow><mo>−</mo><mi>c</mi><mo>≤</mo><mi>j</mi><mo>≤</mo><mi>c</mi><mo separator="true">,</mo><mi>j</mi><mo mathvariant="normal">≠</mo><mn>0</mn></mrow></munder><mi>log</mi><mo>⁡</mo><mi>p</mi><mo stretchy="false">(</mo><msub><mi>w</mi><mrow><mi>t</mi><mo>+</mo><mi>j</mi></mrow></msub><mi mathvariant="normal">∣</mi><msub><mi>w</mi><mi>t</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">J = -\frac{1}{T} \sum_{t=1}^{T} \sum_{-c \leq j \leq c, j \neq 0} \log p(w_{t+j} | w_t)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.09618em;">J</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:3.2666em;vertical-align:-1.4382em;"></span><span class="mord">−</span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">T</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.8283em;"><span style="top:-1.8829em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">T</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.2671em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.05em;"><span style="top:-1.8479em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mathnormal mtight">c</span><span class="mrel mtight">≤</span><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mrel mtight">≤</span><span class="mord mathnormal mtight">c</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mrel mtight"><span class="mrel mtight"><span class="mord vbox mtight"><span class="thinbox mtight"><span class="rlap mtight"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="inner"><span class="mord mtight"><span class="mrel mtight"></span></span></span><span class="fix"></span></span></span></span></span><span class="mrel mtight">=</span></span><span class="mord mtight">0</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.4382em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">p</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0269em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="mbin mtight">+</span><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mord">∣</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:-0.0269em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span></p>
+<p>where:</p>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span></span></span></span> is the total number of words in the corpus,</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi></mrow><annotation encoding="application/x-tex">c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">c</span></span></span></span> is the size of the context window,</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">w_t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:-0.0269em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> is the target word, and</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mrow><mi>t</mi><mo>+</mo><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">w_{t+j}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7167em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0269em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="mbin mtight">+</span><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span> is a context word.</li>
+</ul>
+<h4 class="crossnote-header" id="c-why-are-vector-embeddings-and-semantic-similarity-relevant-for-our-use-case">c. Why are vector embeddings and semantic similarity relevant for our use case?</h4>
+
+<p>Vector embeddings capture the semantic essence of the text. When dealing with a large volume of unstructured data like SEC filings, embeddings can significantly help in:</p>
+<ol>
+<li><strong>Information Retrieval</strong>: By converting text into a vector space, you can use similarity measures to retrieve documents relevant to a particular query, improving search functionality.</li>
+<li><strong>Text Clustering</strong>: Grouping similar documents together based on semantic similarity, aiding in data organization and retrieval.</li>
+<li><strong>Text Summarization</strong>: Generating concise summaries of large text corpora, enabling quicker insights.</li>
+</ol>
+<p>Semantic similarity allows the system to understand the meaning behind the text, which is crucial for tasks like search and synthesis in large datasets.</p>
+<h4 class="crossnote-header" id="d-what-makes-one-embedding-model-better-than-another">d. What makes one embedding model better than another?</h4>
+
+<p>The effectiveness of an embedding model can be assessed based on:</p>
+<ol>
+<li><strong>Performance</strong>: Performance on downstream tasks like classification, clustering, or information retrieval.</li>
+<li><strong>Training Data</strong>: The quality and size of the training data, and how well it represents the domain of interest.</li>
+<li><strong>Dimensionality</strong>: Lower-dimensional embeddings are easier to work with, but there's a trade-off between dimensionality and the amount of captured information.</li>
+<li><strong>Computational Efficiency</strong>: The time and resources required to train and use the embeddings.</li>
+<li><strong>Interpretability</strong>: Some models offer more interpretable embeddings, revealing clear semantic relationships.</li>
+</ol>
+<h4 class="crossnote-header" id="e-bonus-how-does-self-training-an-embedding-model-work-and-why-might-we-choose-to-go-down-this-route">e. BONUS: How does self-training an embedding model work? And why might we choose to go down this route?</h4>
+
+<p>Self-training is a form of semi-supervised learning. Here’s how it works:</p>
+<ol>
+<li><strong>Initial Training</strong>: Train an embedding model on a small labeled dataset.</li>
+<li><strong>Label Propagation</strong>: Use the trained model to predict labels for the unlabeled data.</li>
+<li><strong>Model Re-training</strong>: Combine the original labeled data with the newly labeled data, and re-train the model.</li>
+</ol>
+<p>This process can be iteratively repeated to improve the model's performance, especially when labeled data is scarce but unlabeled data is abundant.</p>
+<p>Self-training can be beneficial when:</p>
+<ul>
+<li>There's a large amount of unlabeled data available.</li>
+<li>Labeling data is costly or time-consuming.</li>
+<li>You want to improve the model's performance or adapt it to a specific domain.</li>
+</ul>
+<p>Great, let's delve into the Massive Text Embedding Benchmark (MTEB) based on the information available and the provided research paper.</p>
+<hr>
+<h3 class="crossnote-header" id="2-mteb-massive-text-embedding-benchmark">2. MTEB (Massive Text Embedding Benchmark)</h3>
+
+<p>Hugging Face's MTEB is a useful tool for comparing the performance of various text-embeddings. This research paper explains how it works. <em>[MTEB: Massive Text Embedding Benchmark (Mar '23), Niklas Muennighoff and Nouamane Tazi and Loïc Magne and Nils Reimers, <a href="https://arxiv.org/abs/2210.07316">https://arxiv.org/abs/2210.07316</a>]</em> The following analysis is based on it.</p>
+<h4 class="crossnote-header" id="a-what-factors-is-the-benchmark-based-on">a. What factors is the benchmark based on?</h4>
+
+<p>The MTEB aims to provide a comprehensive evaluation of text embedding models across a wide range of tasks and datasets. Here are the key takeaways:</p>
+<ul>
+<li><strong>Diversity of Tasks</strong>: MTEB spans 8 embedding tasks, intending to cover a variety of use cases where text embeddings are applied. (Bitext Mining, Classification, Clustering, Pair Classification, Reranking, Retrieval, Semantic Textual Similarity, Summarization)</li>
+<li><strong>Extensive Dataset Coverage</strong>: It covers a total of 58 datasets across 112 languages, aiming for a broad evaluation across different languages and data domains.</li>
+<li><strong>Model Evaluation</strong>: Through benchmarking 33 models on MTEB, the authors aim to provide a comprehensive evaluation of text embeddings to date.</li>
+<li><strong>Evaluation Regime</strong>: The evaluation of text embedding models in MTEB appears to be aimed at covering a breadth of applications, unlike previous evaluations that may have focused on a narrow set of tasks or datasets.</li>
+</ul>
+<h4 class="crossnote-header" id="b-what-are-some-examples-and-use-cases-of-the-top-performing-pre-trained-models">b. What are some examples and use cases of the top-performing pre-trained models?</h4>
+
+<p>The paper mentions that there isn't a particular text embedding method that dominates across all tasks, indicating that the field has yet to converge on a universal text embedding method. This suggests that different embedding models might excel in different tasks, and it's crucial to choose the appropriate model based on the specific use case.</p>
+<p>Text embeddings power a variety of use cases from clustering, topic representation, search systems, text mining, to feature representations for downstream models.</p>
+<hr>
+<h3 class="crossnote-header" id="3-vector-databases">3. Vector Databases</h3>
+
+<h4 class="crossnote-header" id="a-what-are-vector-databases-how-do-they-work-what-makes-them-different-from-traditional-databases">a. What are vector databases? How do they work? What makes them different from traditional databases?</h4>
+
+<ul>
+<li>
+<p><strong>Definition and Functionality</strong>:</p>
+<ul>
+<li>Vector databases are specialized databases designed to handle vector data efficiently, which is commonly generated from machine learning models. They provide the ability to perform operations like nearest neighbor search, which is essential for tasks like similarity search and clustering.</li>
+</ul>
+</li>
+<li>
+<p><strong>Working Mechanism</strong>:</p>
+<ul>
+<li><strong>Indexing</strong>: Vector databases index high-dimensional vectors to facilitate efficient search and retrieval. Indexing strategies like KD-trees, Ball trees, or hashing techniques like Locality-Sensitive Hashing (LSH) are employed.</li>
+<li><strong>Querying</strong>: They allow querying based on vector similarity rather than exact matches. Queries return the most similar vectors based on a similarity or distance metric like cosine similarity or Euclidean distance.</li>
+</ul>
+</li>
+<li>
+<p><strong>Differences from Traditional Databases</strong>:</p>
+<ul>
+<li><strong>Data Type</strong>: Traditional databases handle structured data with well-defined schemas, while vector databases are optimized for high-dimensional vector data.</li>
+<li><strong>Query Mechanism</strong>: Traditional databases use SQL or similar languages for exact matching queries, whereas vector databases use similarity search.</li>
+<li><strong>Indexing</strong>: Indexing in vector databases is tailored for high-dimensional spaces, which is significantly different from the indexing mechanisms used in traditional databases.</li>
+</ul>
+</li>
+</ul>
+<h4 class="crossnote-header" id="b-how-should-large-amounts-of-data-like-sec-filings-be-seeded-into-a-vector-database">b. How should large amounts of data (like SEC filings) be seeded into a vector database?</h4>
+
+<ul>
+<li>
+<p><strong>Pre-processing</strong>:</p>
+<ul>
+<li>The text data should be pre-processed (cleaned, tokenized) and then converted into vector representations using a suitable text embedding model.</li>
+</ul>
+</li>
+<li>
+<p><strong>Batch Indexing</strong>:</p>
+<ul>
+<li>Once the vectors are generated, batch indexing can be used to seed large amounts of data into the vector database. This is typically more efficient than indexing each vector individually.</li>
+</ul>
+</li>
+<li>
+<p><strong>Parallel Processing</strong>:</p>
+<ul>
+<li>Parallel processing and distributed systems can be employed to speed up the seeding process, especially when dealing with massive datasets.</li>
+</ul>
+</li>
+<li>
+<p><strong>Incremental Updates</strong>:</p>
+<ul>
+<li>For continuous ingestion of new data, incremental updates to the vector database should be supported to ensure the data remains current without requiring a complete re-index.</li>
+</ul>
+</li>
+</ul>
+<h4 class="crossnote-header" id="c-what-metrics-should-be-used-to-measure-vector-database-performance">c. What metrics should be used to measure vector database performance?</h4>
+
+<ul>
+<li>
+<p><strong>Performance Metrics</strong>:</p>
+<ul>
+<li><strong>Query Latency</strong>: The time it takes to execute a query and retrieve results.</li>
+<li><strong>Indexing Speed</strong>: How fast new data can be indexed.</li>
+<li><strong>Scalability</strong>: How well the database handles increasing amounts of data and query load.</li>
+<li><strong>Precision and Recall</strong>: Accuracy of the search results in terms of relevance and completeness.</li>
+</ul>
+</li>
+<li>
+<p><strong>Other Considerations</strong>:</p>
+<ul>
+<li><strong>Ease of Use</strong>: How user-friendly the database is, including the availability of documentation, community support, and intuitive APIs.</li>
+<li><strong>Flexibility</strong>: Support for different distance metrics, data types, and query mechanisms.</li>
+<li><strong>Cost</strong>: Total cost of ownership including licensing, hardware, and operational costs.</li>
+<li><strong>Maintenance</strong>: How easy it is to manage, monitor, and troubleshoot the database.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 class="crossnote-header" id="4-implementation">4. Implementation</h3>
+
+<h4 class="crossnote-header" id="a-integrating-a-system-using-an-embedding-model-feeding-into-a-vector-database-with-an-llm-layer">a. Integrating a system using an embedding model, feeding into a vector database, with an LLM layer.</h4>
+
+<p><a href="https://mermaid.live/edit#pako:eNpNkc1OwzAQhF9l5XP6Aj0gURIQEoifFi4Jh228TSxiO9jr_kB5d9YBCjd7NfvNjP2hWq9JzVUXcOxhtWgcwHldIiPcB5qNwbcUo3HdC8xmZ8eVfyVn3pGNdwU8kvVbHMBvILIfdz7oWMCK9gzOB4vDSVmSXFwHO8M9uGQpmFYWGdcDxSMs6mmpsmvSOpvlGIvJ8YmNYAg4C-hXAFZiD0e4qJ-pZR8gJ15jJFgSnQgXE-Haadr_rYpdWT8kCgdpeGqX5eUk_xnCW5YUcEWOAjJ932E72RWwNNYMGAwfIBKGtj9CVV-7Ta6dK8Py4LinaOKEriZ0ZcfBH-AGXZewI7jNJYSVrBXUOxVw7uKOQvaKmRL_-RsXTdezxL-s7xKPiV9UoeQlLRotP_iRfRolppYaNZejxvDaqMZ9ig4Te4nUqjmHRIVKoxZoaVA-3qr5Bod4mlbaSMef4ecXoI_C4Q"><img src="https://mermaid.ink/img/pako:eNpNkc1OwzAQhF9l5XP6Aj0gURIQEoifFi4Jh228TSxiO9jr_kB5d9YBCjd7NfvNjP2hWq9JzVUXcOxhtWgcwHldIiPcB5qNwbcUo3HdC8xmZ8eVfyVn3pGNdwU8kvVbHMBvILIfdz7oWMCK9gzOB4vDSVmSXFwHO8M9uGQpmFYWGdcDxSMs6mmpsmvSOpvlGIvJ8YmNYAg4C-hXAFZiD0e4qJ-pZR8gJ15jJFgSnQgXE-Haadr_rYpdWT8kCgdpeGqX5eUk_xnCW5YUcEWOAjJ932E72RWwNNYMGAwfIBKGtj9CVV-7Ta6dK8Py4LinaOKEriZ0ZcfBH-AGXZewI7jNJYSVrBXUOxVw7uKOQvaKmRL_-RsXTdezxL-s7xKPiV9UoeQlLRotP_iRfRolppYaNZejxvDaqMZ9ig4Te4nUqjmHRIVKoxZoaVA-3qr5Bod4mlbaSMef4ecXoI_C4Q?type=png" alt=""></a></p>
+<h4 class="crossnote-header" id="b-how-do-we-measure-the-performance-of-our-implementation">b. How do we measure the performance of our implementation?</h4>
+
+<ol>
+<li>
+<p><strong>Efficiency Metrics</strong>:</p>
+<ul>
+<li><strong>Query Latency</strong>: Measure the time it takes to process a query and retrieve results.</li>
+<li><strong>Indexing Speed</strong>: Evaluate the speed at which new data can be indexed into the vector database.</li>
+</ul>
+</li>
+<li>
+<p><strong>Accuracy Metrics</strong>:</p>
+<ul>
+<li><strong>Precision and Recall</strong>: Assess the relevance and completeness of the retrieved information for a set of test queries.</li>
+<li><strong>NLP Task Performance</strong>: Evaluate the performance on specific NLP tasks like summarization, question answering, etc., using standard metrics like BLEU, ROUGE, etc.</li>
+</ul>
+</li>
+<li>
+<p><strong>Scalability</strong>:</p>
+<ul>
+<li>Assess how well the system handles increasing amounts of data and query load.</li>
+</ul>
+</li>
+</ol>
+<h4 class="crossnote-header" id="c-what-is-a-good-architecture-to-facilitate-the-implementation-and-testing-of-multiple-combinations-of-tools-on-a-sample-dataset">c. What is a good architecture to facilitate the implementation and testing of multiple combinations of tools on a sample dataset?</h4>
+
+<p><img src="https://showme.redstarplugin.com/d/d:Cj2v0Sfy" alt=""></p>
+<hr>
+<h3 class="crossnote-header" id="5-future-looking-questions">5. Future Looking Questions</h3>
+
+<h4 class="crossnote-header" id="a-what-features-can-give-our-application-a-feeling-of-self-awareness-through-automation">a. What features can give our application a feeling of "self-awareness" through automation?</h4>
+
+<ol>
+<li>
+<p><strong>Continuous Learning</strong>:</p>
+<ul>
+<li>Implementing a mechanism where the system can learn from user interactions and feedback to improve its performance over time.</li>
+</ul>
+</li>
+<li>
+<p><strong>Anomaly Detection</strong>:</p>
+<ul>
+<li>Enable the system to identify anomalies in the data or in its performance, and alert administrators or take corrective actions automatically.</li>
+</ul>
+</li>
+<li>
+<p><strong>Adaptive Indexing</strong>:</p>
+<ul>
+<li>Allow the system to adapt its indexing strategies based on the evolving nature of the data, ensuring optimal performance as the data grows and changes.</li>
+</ul>
+</li>
+<li>
+<p><strong>Automated Model Tuning</strong>:</p>
+<ul>
+<li>Incorporate automated machine learning (AutoML) techniques to continually optimize model parameters and configurations based on the performance metrics.</li>
+</ul>
+</li>
+<li>
+<p><strong>Predictive Analysis</strong>:</p>
+<ul>
+<li>Utilize predictive analytics to anticipate user needs, optimize system performance, and pre-empt potential issues.</li>
+</ul>
+</li>
+<li>
+<p><strong>Self-Healing</strong>:</p>
+<ul>
+<li>Implement self-healing mechanisms to automatically recover from failures or performance degradation.</li>
+</ul>
+</li>
+<li>
+<p><strong>Context Awareness</strong>:</p>
+<ul>
+<li>Enable the system to be aware of the context in which it is operating, adjusting its behavior based on the current state of the data, user interactions, and external factors.</li>
+</ul>
+</li>
+<li>
+<p><strong>Automated Reporting</strong>:</p>
+<ul>
+<li>Develop automated reporting and dashboards that provide insights into system performance, user behavior, and the value being delivered by the application.</li>
+</ul>
+</li>
+<li>
+<p><strong>Real-time Monitoring and Adjustment</strong>:</p>
+<ul>
+<li>Establish real-time monitoring to track system pe arformance and make real-time adjustments to ensure optimal operation.</li>
+</ul>
+</li>
+<li>
+<p><strong>Feedback Loops</strong>:</p>
+<ul>
+<li>Create feedback loops where user feedback and system metrics are used to continuously improve the system.</li>
+</ul>
+</li>
+</ol>
+<p>These features can contribute to creating a level of "self-awareness" in the application, where it can adapt, learn, and evolve over time to better meet the needs of its users and the goals of the organization.</p>
+<p>The integration of self-awareness features may also necessitate a thorough review of the ethical implications, user privacy considerations, and potential biases in the system's behavior and responses.</p>
+<hr>
+<h3 class="crossnote-header" id="conclusion">Conclusion</h3>
+
+<p>In conclusion, the exploration of embeddings, Massive Text Embedding Benchmark (MTEB), and vector databases presents a robust framework for handling, searching through, and synthesizing large volumes of unstructured data such as SEC filings. The utilization of suitable text embeddings transforms textual data into a format conducive for efficient similarity search and retrieval operations within vector databases. The MTEB, by providing a comprehensive benchmark across a diverse range of tasks and datasets, enables the evaluation and comparison of different embedding models, ensuring the selection of the most effective model for the specified use case. Implementing a modular architecture facilitates the integration of these components along with Language Models for information lookup and synthesis, while also allowing for the efficient evaluation of different combinations of tools on a sample dataset. Performance metrics such as query latency, indexing speed, precision, and recall are crucial for assessing the efficacy and scalability of the implementation. This technical groundwork lays a solid foundation for developing a system capable of intelligently and efficiently managing vast amounts of unstructured data, thereby significantly augmenting the information retrieval and synthesis capabilities of the application.</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
